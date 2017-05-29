@@ -1,0 +1,129 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+@import "font-awesome";
+
+
+h1 {
+margin-top: 30px;
+  margin:0;
+  padding:0;
+  color: white;
+}
+
+.new_article {
+  color: black;
+}
+
+body {
+  background-color: #6c6e70;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  background: image_url('texture.png');
+  cursor: pointer;
+
+}
+
+.navbar {
+  background: image_url('new_year_background.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+ 
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+}
+
+.booyah-box-comments {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #c5d5e5;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+}
+
+.navbar-light .navbar-brand {
+  color: #999999;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+   margin-bottom: 0;
+}
+
+.pagination {
+  margin-top:10px;
+  margin-left: 30px;
+  margin-bottom:15px;
+  padding:20px;
+  font-size: 26px;
+
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+  line-height: 1;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  border-radius: 36px 36px 36px 36px;
+-moz-border-radius: 36px 36px 36px 36px;
+-webkit-border-radius: 36px 36px 36px 36px;
+border: 0px solid #000000;
+  height: 550px;
+   width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.btn-primary {
+  margin-bottom: 20px;
+  box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#428bca;
+}
+
+  .btn-custom {
+  background-color: hsl(0, 92%, 55%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa8e8e", endColorstr="#f52222");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fa8e8e), to(#f52222));
+  background-image: -moz-linear-gradient(top, #fa8e8e, #f52222);
+  background-image: -ms-linear-gradient(top, #fa8e8e, #f52222);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa8e8e), color-stop(100%, #f52222));
+  background-image: -webkit-linear-gradient(top, #fa8e8e, #f52222);
+  background-image: -o-linear-gradient(top, #fa8e8e, #f52222);
+  background-image: linear-gradient(#fa8e8e, #f52222);
+  border-color: #f52222 #f52222 hsl(0, 92%, 49.5%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.36);
+  -webkit-font-smoothing: antialiased;
+}
+
+.markdown {
+-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #c5d5e5;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  
+}

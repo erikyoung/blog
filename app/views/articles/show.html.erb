@@ -1,0 +1,42 @@
+
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1><%= @article.title %></h1>
+	<i><%= @article.body %></i>
+	<br/><br/>
+
+	<% if user_signed_in? %>
+		<% if @article.user_id = current_user.id %>
+			 <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-primary' %>
+			 <%= link_to 'Delete', article_path, method: :delete, data: { confirm: "Are you sure you want to delete Article #{@article.title}?"}, class: 'btn btn-primary' %>
+			 <%= link_to 'Back', articles_path, class: 'btn btn-primary' %>
+
+		 <% end %>
+	<% end %>
+	 
+   
+ 
+</div>
+
+
+  <div class="booyah-box col-xs-10 col-xs-offset-1">
+  <h3>Comments (<%= @article.comments.size %>)</h3>
+    <blockquote>
+        <%= render @article.comments %>
+        <% if user_signed_in? %>
+        <% if @comment.user_id = current_user.id %>
+        <%= render 'comments/form' %>
+      <small><%= @comment.user_id %></small>
+    </blockquote>
+  </div>
+<% end %>
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+

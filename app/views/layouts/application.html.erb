@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  
+  
+  <!--Navbar -->
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="<%= root_path %>">Blog</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <!-- Log In/Out Logic -->
+  
+    <ul class="navbar-nav mr-auto">
+      <% if user_signed_in? %>
+      <li class="nav-item">
+        <a class="nav-link" data-method="delete" href="<%= destroy_user_session_path %>">Log Out</a>
+      </li>
+
+      <li class="nav-item">
+      <%= link_to new_article_path, class: 'nav-link' do %>
+      <i class="fa fa-plus-circle"></i>
+      New Article
+    <% end %>
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= new_user_registration_path %>">Sign Up</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<%= new_user_session_path %>">Log In</a>
+      </li>
+      
+    </ul>
+
+    <% end %>
+
+    <form class="form-inline my-2 my-lg-0">
+     <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
+	  <%= text_field_tag :search, params[:search], placeholder: "Search Articles" %>
+	  <%= submit_tag "Search" %>
+	  <% end %>
+    </form>
+  </div>
+</nav>
+
+<!--flash notice -->
+  <% unless flash.empty? %>
+  <div class="container">
+    <% flash.each do |key, value| %>
+    <%= value %>
+    <% end %>
+    <% end %>
+  </div>
+	<div class="container">
+    <%= yield %>
+  </body>
+</html>
