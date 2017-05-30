@@ -10,11 +10,13 @@ class ArticlesController < ApplicationController
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 
     if params[:search]
-     @articles = Article.search(params[:search]).order("created_at DESC")
+     @articles = @articles.search(params[:search])
    else
-    @articles = Article.all.order('created_at DESC').paginate(:page => params[:page], per_page: 2)
+    @articles = Article.all
   end
+  @articles = @articles.order("created_at DESC").paginate(:page => params[:page], per_page: 2)
 end
+
 
   # GET /articles/1
   # GET /articles/1.json

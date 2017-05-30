@@ -49,7 +49,7 @@ tag.
 * [X] Has a functioning footer that displays social media icons
 * [X] Implemented the use of simple form gem to create User Articles
 * [X] Added an image carousel to the landing page 
-* []
+* [X]  Added pagination to the search functionality
 
 > HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
 
