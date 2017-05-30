@@ -50,6 +50,7 @@ tag.
 * [X] Implemented the use of simple form gem to create User Articles
 * [X] Added an image carousel to the landing page 
 * [X]  Added pagination to the search functionality
+* [X] Applied Grunt.js to automate frontend tasks
 
 > HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
 

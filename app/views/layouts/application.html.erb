@@ -57,6 +57,8 @@
   </div>
 </nav>
 
+
+
 <!--flash notice -->
   <% unless flash.empty? %>
   <div class="container">
@@ -66,6 +68,40 @@
     <% end %>
   </div>
 	<div class="container">
+
     <%= yield %>
+
+     </div>
+
+     <br class="clr" />
+
+
+<div id="footer">
+    <div class="container">
+    <div class="row">
+      <div class="contact col-md-6 pull-left">
+        <b>Contact</b>
+        <br />
+        youngerik26@gmail.com
+        <br />
+        702 Nguyen Van Linh
+        <br />
+        Ho Chi Minh City, Vietnam, 7000
+      </div>
+         <div class="col-xs-12 col-sm-3 social pull-right">
+          <b>Social</b>
+          <%= link_to 'https://github.com/erikyoung' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+          <%= link_to 'https://www.facebook.com/erik.young.923' do %>
+          <%= image_tag 'facebook.png', class: 'social-button' %>
+        <% end %>
+          <%= link_to 'https://twitter.com/youngerik26' do %>
+          <%= image_tag 'twitter.png', class: 'social-button' %>
+        <% end %> 
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
