@@ -4,15 +4,16 @@ before_action :find_article
 before_action :find_comment, only: [:edit, :update, :destroy]
 
 def create
-	@comment = Comment.new(comment_params)
-	@comment.article_id = params[:article_id]
+	@comment = @article.comments.create(comment_params)
+	@comment.user_id = current_user
 
-	@comment.save
-
-	 
-
-	redirect_to article_path(@comment.article)
-end
+	if @comment.save!
+		redirect_to article_path(@article)
+	else
+		flash[:error] = "Error saving the comment."
+		redirect_to article_path(@article)
+	end
+	end
 
 
 def edit
