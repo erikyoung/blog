@@ -67,9 +67,6 @@
         <td><%= time_ago_in_words(article.created_at) %></td>
       
         <td><%= @markdown.render(article.body).html_safe  %></td>
-      
-      
-
         <td><% if article.user.present? %></td>
         <td><span style="margin-right: 5em;"><small><%= article.user.email %></span></small></td>
         <% end %>

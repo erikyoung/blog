@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
- 
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+
 
   # GET /articles
   # GET /articles.json
@@ -40,8 +41,7 @@ end
   def create
     @article = current_user.articles.build(article_params)
 
-   
-
+  
     respond_to do |format|
       if @article.save
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
