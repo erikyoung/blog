@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
 before_action :find_article
 before_action :find_comment, only: [:edit, :update, :destroy]
 
+
 def create
 	@comment = @article.comments.create(comment_params)
 	@comment.user = current_user

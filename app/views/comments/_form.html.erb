@@ -1,7 +1,7 @@
 <%= simple_form_for [@article, Comment.new] do |f| %>
 
 <div class="booyah-box-comments col-xs-10 col-xs-offset-1">
-	 <%= f.text_field :content, placeholder: "Comment...",  required: true %>
+	 <%= f.text_field :content, placeholder: "Comment...", class: 'form-controller',  required: true %>
 	 <%= f.submit "Comment", class: "btn btn-primary" %>
 </div>
 <% end %>
