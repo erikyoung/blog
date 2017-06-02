@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users 
+  # need a bit of code here for the get and delete requests
   resources :articles do	
   	resources :comments
+  		
   end
 
   root 'articles#index'
