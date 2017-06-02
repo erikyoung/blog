@@ -13,7 +13,7 @@ Submitted by: **Erik Young**
 
 Time spent: **12** hours spent in total
 
-URL: **Insert your Heroku URL here**
+URL: **https://blog-erik.herokuapp.com/**
 
 ## User Stories
 
