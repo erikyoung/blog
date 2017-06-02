@@ -1,6 +1,6 @@
 # README
 
-# Pre-work - *Name of App Here*
+# Pre-work - *CoderSchool_Blog*
 
 > HINT: Please
 > - include this README.md in your project and fill out the information. 
@@ -11,7 +11,7 @@
 
 Submitted by: **Erik Young**
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 URL: **Insert your Heroku URL here**
 
@@ -65,9 +65,12 @@ Here's a walkthrough of implemented user stories:
 > HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
 > `![Video Walkthrough](walkthrough.gif)` 
 
-> `![video walkthrough](Prework_Demo_CoderSchool.gif)`
+lkthrough](Prework_Demo_CoderSchool.gif)`
 
-![Video Walkthrough](/path/to/your/gif/file)
+`![video walkthrough](file:///Users/ErikYoung/Desktop/Prework_Demo_CoderSchool.gif)`
+>>>>>>> 6cd7ccd0bef27b53f976e6a59c4fc21a0e05315f
+
+>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
