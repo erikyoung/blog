@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  devise_for :users 
-  # need a bit of code here for the get and delete requests
+  devise_for :users do
+  	get 'logout' => 'sessions#destroy'
+  end
   resources :articles do	
   	resources :comments
   		

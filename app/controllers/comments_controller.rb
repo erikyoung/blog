@@ -30,8 +30,8 @@ def update
 end
 
 def destroy
-	@comment.destroy
-	redirect_to article_path(@article)
+    @comment.destroy
+    redirect_to article_path(@article)
 end
 
 private
